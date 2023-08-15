@@ -34,4 +34,3 @@ hyp_res = tmle(patients$death, patients$Preexisting_Hypertension, # changes for 
 
 apply(hyp_res$Qstar,2,mean)
 
-## each preexisting condition is
