@@ -6,7 +6,7 @@ library(tmle)
 
 # data
 tested_patients = read.csv(file = "Data/sinolave_03112021_meds_for_estimation_rapid.csv")
-patients = tested_patients[tested_patients$covid19_lab == 1,] # this is the example of overall; changes for each phase
+patients = tested_patients[tested_patients$covid19_lab == 1,] # this is the example of overall; changes for each phase see prediction_sl.R for an example
 
 covariates = names(patients)[!names(patients) %in%
                                c("Oleada", "Nationality", "death",
